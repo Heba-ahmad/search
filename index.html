@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>Search</title>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+      <header>
+        <ul>
+          <li><a href="imagepage.html" title="Go to Google Image Search">Google-Image<la></li>
+          <li><a href="advancedpage.html" title="Go to Google Advanced Search">Google-Advanced</a></li>
+          <li><a href="#"><img src="image/bars.png" title="Google App"></a></li>
+          <li> <button type="button" name="SignInButton">Sign In</button> </li>
+        </ul>
+      </header>
+      <main>
+        <div class="logoimage">
+          <img src="image/google.png" alt="Google" title="Google Search">
+        </div>
+        <div class="searchform">
+          <form action="https://google.com/search">
+            <div class="searchformborder">
+              <div class="icon1">
+                <img src="image/search.png">
+              </div>
+              <input type="search" name="q">
+              <div class="icon2"><img src="image/mic.png" height="19px" width="auto">
+              </div>
+            </div>
+            <div class="">
+              <input type="submit" name="btnK" value="Google Search">
+              <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </div>
+          </form>
+          <div class="languages">
+             "Google offered in: "
+             <a href="https://www.google.com/setprefs?sig=0_zmU9qB05Io7Kv-SUzhxBpD43uvI%3D&hl=ar&source=homepage&sa=X&ved=0ahUKEwiG7O3-_uTsAhUO3BoKHTeJB80Q2ZgBCA8" >العربية</a>
+         </div>
+        </div>
+      </main>
+      <footer>
+
+        <div class="row1">
+          <p class="country"> Saudi Arabia </p>
+        </div>
+        <div class="row2">
+          <ul>
+              <li><a href="https://www.google.com/intl/en_sa/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+              <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+              <li><a href="https://about.google/?utm_source=google-SA&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+              <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+          </ul>
+          <ul>
+              <li><a href="https://policies.google.com/privacy?hl=en-SA&fg=1">Privacy</a></li>
+              <li><a href="https://policies.google.com/terms?hl=en-SA&fg=1">Terms</a></li>
+              <li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+          </ul>
+        </div>
+
+      </footer>
+
     </body>
 </html>
