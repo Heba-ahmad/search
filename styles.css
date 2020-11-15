@@ -74,6 +74,18 @@ width: 100%;
   margin-bottom: 20px;
   text-align: center;
 }
+.logo-text{
+  position: relative;
+  top: -20px;
+  text-align: -webkit-center;
+  left: 105px;
+  color: #4285f4;
+  font-size: 16px;
+  white-space: nowrap;
+
+
+
+}
 .searchform{
   display: block;
   width: 100%;
@@ -100,6 +112,21 @@ align-items: center;
 padding: 12px 10px;
 text-align: right;
 align-items: center;
+}
+.icon3{
+  height: 44px;
+  width: 44px;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  background: transparent;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 10px;
+  flex: 0 0 auto;
+}
+.icon3:hover{
+  border: none;
 }
 input[type="search"]{
   border: none;
@@ -187,8 +214,5 @@ footer .row2 ul li a{
 
 }
 footer .row2 ul:nth-child(2) li a{
-  text-decoration: none;
-  font-size: 14px;
-  color: #5f6368;
   margin-left: 25px;
 }
