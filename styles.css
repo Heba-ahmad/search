@@ -1,17 +1,21 @@
+* {
+  box-sizing: border-box;
+}
 body{
-  box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
   background-color: #fff;
   font-family: Arial, sans-serif;
   padding: 0;
   margin:0;
 }
+/* header*/
 header{
   position: relative;
   display: flex;
-  flex: 1 1 auto;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-left: 0 !important;
   margin-right: 0 !important;
   top: 0;
@@ -21,6 +25,7 @@ header{
   float: right;
   white-space: nowrap;
 }
+
 header ul{
   display: flex;
   justify-content: center;
@@ -50,41 +55,34 @@ header ul li button{
   font-weight: bold;
   cursor: default;
 }
-.headerlogo{
-  height: 31px;
+/*advanced page header*/
+.logo-header{
+  height: 30px;
   width: auto;
-  padding: 15px;
-  text-align: center;
 }
-.headerbackground{
-  background-color: #f1f1f1;
+#ad-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: #f2f2f2;
+  width: 100%;
 }
+/* main page*/
 main{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 233px;
-width: 100%;
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
+/*index and image page*/
 .logoimage{
   width: auto;
-  padding-top: 209px;
-  height: 92;
-  margin-bottom: 20px;
+  height: 92px;
+  margin-bottom: 5px;
   text-align: center;
-}
-.logo-text{
-  position: relative;
-  top: -20px;
-  text-align: -webkit-center;
-  left: 105px;
-  color: #4285f4;
-  font-size: 16px;
-  white-space: nowrap;
-
-
-
 }
 .searchform{
   display: block;
@@ -113,21 +111,7 @@ padding: 12px 10px;
 text-align: right;
 align-items: center;
 }
-.icon3{
-  height: 44px;
-  width: 44px;
-  border: none;
-  cursor: pointer;
-  text-align: right;
-  background: transparent;
-  padding: 0;
-  padding-top: 5px;
-  padding-right: 10px;
-  flex: 0 0 auto;
-}
-.icon3:hover{
-  border: none;
-}
+
 input[type="search"]{
   border: none;
   width: 80%;
@@ -175,44 +159,213 @@ div.languages a{
 div.languages a:hover{
   text-decoration: underline;
 }
-
-
+/*image page*/
+.logo-text{
+  position: relative;
+  top: -20px;
+  text-align: -webkit-center;
+  left: 105px;
+  color: #4285f4;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.icon3{
+  height: 44px;
+  width: 44px;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  background: transparent;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 10px;
+  flex: 0 0 auto;
+}
+.icon3:hover{
+  border: none;
+}
+/*advanced page*/
+.ad-label-header{
+  float: left;
+  font: 20px Arial, sans-serif;
+  color: #D93025;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width: 95%;
+  padding: 20px;
+  padding-left: 35px;
+  position:relative;
+}
+.form-container{
+  width: 97%;
+}
+.form-table{
+  display: block;
+  width: 100%;
+  vertical-align: baseline;
+  font-size: 100%;
+  padding-top: 30px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: table-cell;
+}
+.column1{
+  display: table-cell;
+  width: 14%;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 13px;
+  color:#222;
+  float: left;
+  height: 10px;
+}
+.column2{
+  display: table-cell;
+  width: 40%;
+  vertical-align: middle;
+  min-height: 5px;
+  margin-bottom: 10px;
+}
+.column3{
+  display: table-cell;
+  width: 30%;
+  vertical-align: middle;
+  min-height: 5px;
+}
+.cell{
+  border: 1px solid transparent;
+  width: 48.5%;
+}
+.label1{
+  padding-left: 20px;
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.description{
+  font-size: 11px;
+  font-family: monospace;
+  color: #666;
+  white-space: pre;
+}
+input[type="text"]{
+  width: 100%;
+  text-align: left;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  border-radius: 1px;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+  cursor: text;
+  outline: none;
+}
+input[type="text"]:hover{
+  border: 1px solid #4690fe;
+}
+.clo3-h{
+  font-size: 13px;
+  font-weight: 700;
+  color: #777;
+  vertical-align: middle;
+}
+.div-button{
+margin: 40px;
+float: right;
+}
+.ad-button{
+  background-color: #4d90fe;
+  border: 1px solid #3079ed;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  outline: 0;
+  min-width: 120px;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 10px 0;
+}
+.ad-button:hover{
+  cursor: pointer;
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  border: 1px solid #2f5bb7;
+}
+hr{
+  display: block;
+  overflow: hidden;
+  border-radius: 1px solid rgba(0,0,0,0.05);
+  width: 100%;
+  background-color: rgba(0,0,0,0.05);
+}
+/*footer*/
 footer{
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 100px;
   background: #f2f2f2;
 }
 
-footer .row1{
+.footer-row1{
   display: flex;
   text-decoration: none;
-  margin-left: 40px;
   font-size: 14px;
+  padding-left: 40px;
   color: #5f6368;
   border-top: 1px solid rgba(0,0,0,0.05);
+  height:50px;
 }
-footer .row2 {
+.footer-row2 {
+  position:absolute;
   display: flex;
+  background: #f2f2f2;
   justify-content:space-between;
   border-top: 1px solid rgba(0,0,0,0.05);
-
+  width: 100%;
 }
-footer .row2 ul{
+.footer-row2 ul{
   display: flex;
 }
-footer .row2 ul li{
+.footer-row2 ul li{
   text-decoration: none;
   list-style: none;
 }
-footer .row2 ul li a{
+.footer-row2 ul li a{
   text-decoration: none;
   font-size: 14px;
   color: #5f6368;
   margin-right: 25px;
-
 }
-footer .row2 ul:nth-child(2) li a{
-  margin-left: 25px;
+/*responsive web design*/
+@media screen and (max-width:992px) {
+  .row{
+    flex-direction: column;
+  }
+  div.column1{
+    width: 30%;
+  }
+  div.column2{
+    width: 70%;
+  }
+  div.col3-h, div.column3{
+    display: none;
+  }
+  .footer-row2{
+    height: auto;
+  }
+  .footer-row1 .footer-row2{
+    font-size: 2px;
+    background: #f2f2f2;
+  }
+  .footer-row2, .footer-row2 ul{
+    flex-direction: column;
+  }
+
 }
