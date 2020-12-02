@@ -180,9 +180,11 @@ div.languages a:hover{
   padding-top: 5px;
   padding-right: 10px;
   flex: 0 0 auto;
+  outline: none;
 }
 .icon3:hover{
   border: none;
+  outline: none;
 }
 /*advanced page*/
 .ad-label-header{
@@ -342,6 +344,7 @@ footer{
   font-size: 14px;
   color: #5f6368;
   margin-right: 25px;
+
 }
 /*responsive web design*/
 @media screen and (max-width:992px) {
